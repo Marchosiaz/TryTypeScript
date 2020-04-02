@@ -1,3 +1,8 @@
+var Role;
+(function (Role) {
+    Role["ADMIN"] = "Me";
+    Role["READ_ONLY"] = "Kek";
+})(Role || (Role = {}));
 var person = {
     name: 'Maximus',
     age: 39,
@@ -8,7 +13,8 @@ var person = {
         'play chess',
         12
     ],
-    favoriteMovie: ['Attack on titan', 2012]
+    favoriteMovie: ['Attack on titan', 2012],
+    role: Role.ADMIN
 };
 person.favoriteMovie.push('The game');
 console.log(person.favoriteMovie);

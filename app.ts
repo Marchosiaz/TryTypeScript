@@ -1,8 +1,12 @@
+enum Role { ADMIN = 'Me', READ_ONLY = 'Kek' }
+
+
 const person: {
     name: string;
     age: number;
     hobbies: any[];
-    favoriteMovie: [string, number]
+    favoriteMovie: [string, number],
+    role
 } = {
     name: 'Maximus',
     age: 39,
@@ -13,7 +17,8 @@ const person: {
         'play chess',
         12
     ],
-    favoriteMovie: ['Attack on titan', 2012]
+    favoriteMovie: ['Attack on titan', 2012],
+    role: Role.ADMIN
 };
 
 person.favoriteMovie.push('The game');
