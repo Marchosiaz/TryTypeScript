@@ -1,8 +1,9 @@
-function add(num1, num2) {
-    return num1 + num2;
+const person: {
+    name: string;
+    age: number;
+} = {
+    name: 'Maximus',
+    age: 39,
 };
 
-const number1 = 123;
-const number2 = 414;
-
-console.log(add(number1, number2))
+console.log(person.name);
