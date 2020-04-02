@@ -2,6 +2,7 @@ const person: {
     name: string;
     age: number;
     hobbies: any[];
+    favoriteMovie: [string, number]
 } = {
     name: 'Maximus',
     age: 39,
@@ -11,7 +12,10 @@ const person: {
         'read books',
         'play chess',
         12
-    ]
+    ],
+    favoriteMovie: ['Attack on titan', 2012]
 };
 
-console.log(person);
+person.favoriteMovie.push('The game');
+
+console.log(person.favoriteMovie);
