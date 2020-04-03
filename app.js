@@ -1,20 +1,11 @@
-var Role;
-(function (Role) {
-    Role["ADMIN"] = "Me";
-    Role["READ_ONLY"] = "Kek";
-})(Role || (Role = {}));
-var person = {
-    name: 'Maximus',
-    age: 39,
-    hobbies: [
-        'coding',
-        'watching videos about psychology, programming and others',
-        'read books',
-        'play chess',
-        12
-    ],
-    favoriteMovie: ['Attack on titan', 2012],
-    role: Role.ADMIN
+var combine = function (input1, input2) {
+    var result;
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        result = input1 + input2;
+    }
+    else {
+        result = input1.toString() + input2.toString();
+    }
+    return result;
 };
-person.favoriteMovie.push('The game');
-console.log(person.favoriteMovie);
+console.log(combine('Max', 'Stalc'));
